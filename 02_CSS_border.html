@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title></title>
+	<style>
+		* {margin: 0; padding: 0;}
+        div {
+            width: 300px; height: 200px;
+            background-color: gray;
+            margin: 10px;
+            border: 50px solid black;
+        }
+        #div1 {
+            box-sizing: border-box;
+            background-color: cyan;
+            border: 50px solid black;
+            padding: 50px;
+        }
+        #div2{
+            box-sizing: content-box;
+            background-color: cyan;
+            border: 50px solid black;
+            padding: 50px;
+        }
+        #div3{
+            background-color: green;
+            border-width: 50px;
+            border-color: gray;
+            border-style: solid; /* 적용되어야 화면에 표시됌*/
+           
+        }
+	</style>
+</head>
+<body>
+    <h1>CSS border-box</h1>
+    <div>단순 div</div>
+    <div id="div1">div1(border-box)</div>
+    <div id="div2">div2(content-box)</div>
+    <div id="div3">div3</div>
+	
+</body>
+</html>

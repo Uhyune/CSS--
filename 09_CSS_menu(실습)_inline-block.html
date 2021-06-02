@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>CSS메뉴만들기</title>
+	<style>
+		nav ul{
+			list-style-type: none;
+  			margin: 0; padding: 0;
+			background-color:indianred;
+			overflow: hidden;
+            font-size: 0;
+		}
+		nav li {
+            display: inline-block;
+		    border-right: 2px solid;
+		}
+		nav li:last-child{
+			border-right: none;
+			float: right;
+			border-left: 2px solid;
+		}
+
+		nav a {
+  		display: block;
+  		padding: 20px 20px;
+		text-decoration: none;
+		font-size: 1.5rem;
+		color: white;
+		}
+		
+		nav a:hover {
+			background-color: violet;
+		}
+
+		nav .active{
+			background-color: red;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a class="active" href="#home">HOME</a></li>
+			<li><a href = "#news">News</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+		</ul>
+	</nav>
+	<div>
+		<ul>
+			<li>사과</li>
+			<li>배</li>
+			<li>복숭아</li>
+		</ul>
+	</div>
+	
+</body>
+</html>
